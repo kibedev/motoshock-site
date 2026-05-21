@@ -5,9 +5,12 @@ import Image from 'next/image';
 import gsap from 'gsap';
 
 export default function SplashScreen({ onComplete }: { onComplete?: () => void }) {
-  const [ativo, setAtivo] = useState(true);
+  const [ativo, setAtivo] = useState(false);
   const overlayRef = useRef<HTMLDivElement>(null);
   const symbolRef = useRef<HTMLDivElement>(null);
+
+  // Só ativa no cliente após hidratação
+  useEffect(() => { setAtivo(true); }, []);
 
   useEffect(() => {
     if (!ativo) return;
@@ -15,25 +18,18 @@ export default function SplashScreen({ onComplete }: { onComplete?: () => void }
     const ctx = gsap.context(() => {
       const tl = gsap.timeline();
 
-      // 1. Raio cai de cima com fade in
       tl.fromTo(
         symbolRef.current,
         { opacity: 0, y: -140 },
         { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out' }
       )
-
-      // 2. Pausa no centro
       .to({}, { duration: 0.65 })
-
-      // 3. Raio some deslizando para a direita até sair da tela
       .to(symbolRef.current, {
         x: '110vw',
         opacity: 0,
         duration: 0.6,
         ease: 'power3.in',
       })
-
-      // 4. Fundo vermelho sobe revelando a hero
       .to(overlayRef.current, {
         yPercent: -100,
         duration: 0.75,
