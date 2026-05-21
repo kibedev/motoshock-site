@@ -157,7 +157,7 @@ export default function Home() {
             </div>
           </FadeIn>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 20 }} className="max-md:grid-cols-1">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {([
               {
                 icon: (
@@ -222,7 +222,7 @@ export default function Home() {
               </h2>
             </div>
           </FadeIn>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 16 }} className="max-lg:grid-cols-2 max-sm:grid-cols-1">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {([
               { icon: 'shield', kicker: '01', title: 'Experiência de Mercado',     desc: 'Mais de 25 anos atendendo motociclistas em Pernambuco com qualidade, confiança e dedicação.', stat: '25+', statLabel: 'Anos' },
               { icon: 'grid',   kicker: '02', title: 'Amplo Catálogo',            desc: 'Honda, Yamaha, Royal Enfield, Bajaj, BMW e muito mais.',                 stat: '15+',  statLabel: 'Marcas'    },
