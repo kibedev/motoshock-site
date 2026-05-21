@@ -126,7 +126,7 @@ export default function Home() {
               {/* Stats */}
               <div style={{ display: 'flex', gap: 0, marginTop: 40 }}>
                 {([['25+','Anos'],['15+','Marcas'],['5K+','Clientes']] as const).map(([n, l], i) => (
-                  <div key={l} style={{ paddingLeft: i === 0 ? 0 : 32, borderLeft: i === 0 ? 'none' : '1px solid rgba(255,255,255,0.08)' }}>
+                  <div key={l} style={{ paddingLeft: i === 0 ? 0 : 32 }}>
                     <div style={{ fontSize: 34, fontWeight: 700, letterSpacing: '-0.03em', lineHeight: 1, color: '#fff' }}>{n}</div>
                     <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.5)', letterSpacing: '0.15em', textTransform: 'uppercase', marginTop: 8 }}>{l}</div>
                   </div>
