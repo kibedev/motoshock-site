@@ -102,8 +102,8 @@ export default function Footer() {
       </div>
 
       {/* ── Main grid ── */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
-           style={{ padding: '56px 0', display: 'grid', gridTemplateColumns: '1.4fr 0.9fr 0.9fr', gap: 48, position: 'relative' }}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-12"
+           style={{ padding: '56px 16px', position: 'relative' }}
            >
         {/* Col 1: Brand */}
         <div>
