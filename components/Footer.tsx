@@ -66,14 +66,14 @@ export default function Footer() {
       <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 1, background: `linear-gradient(90deg, transparent 0%, ${BRAND}55 30%, ${BRAND}55 70%, transparent 100%)` }} />
 
       {/* ── CTA strip ── */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-8 flex-wrap"
-           style={{ padding: '36px 0', borderBottom: '1px solid rgba(255,255,255,0.06)', position: 'relative' }}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6"
+           style={{ padding: '36px 16px', borderBottom: '1px solid rgba(255,255,255,0.06)', position: 'relative' }}>
         <div>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, fontSize: 11, color: BRAND, letterSpacing: '0.25em', textTransform: 'uppercase', fontWeight: 700, marginBottom: 8 }}>
             <span style={{ width: 28, height: 2, background: BRAND, display: 'inline-block' }} />
             Pronto para rodar?
           </div>
-          <div style={{ fontSize: 28, fontWeight: 800, letterSpacing: '-0.02em', color: '#fff' }}>
+          <div style={{ fontSize: 'clamp(20px, 5vw, 28px)', fontWeight: 800, letterSpacing: '-0.02em', color: '#fff' }}>
             Agende a manutenção da sua moto
           </div>
         </div>
@@ -155,10 +155,10 @@ export default function Footer() {
 
       {/* ── Bottom bar ── */}
       <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', position: 'relative' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-6 flex-wrap"
-             style={{ padding: '22px 0', fontSize: 12, color: 'rgba(255,255,255,0.5)', fontFamily: 'monospace' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
+             style={{ padding: '22px 16px', fontSize: 12, color: 'rgba(255,255,255,0.5)', fontFamily: 'monospace' }}>
           <div>© {year} Motoshock · Todos os direitos reservados</div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
             <span style={{ color: 'rgba(255,255,255,0.4)', letterSpacing: '0.15em', textTransform: 'uppercase' }}>Aceitamos</span>
             {['VISA', 'MASTER', 'PIX', 'ELO'].map((p) => (
               <span key={p} style={{ fontSize: 10, padding: '4px 8px', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 4, color: 'rgba(255,255,255,0.75)', letterSpacing: '0.1em', fontWeight: 600 }}>{p}</span>
