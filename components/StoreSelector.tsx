@@ -28,14 +28,14 @@ export default function StoreSelector() {
         {/* Header */}
         <div className="bg-red-600 px-8 pt-8 pb-6 text-center">
           <Image
-            src="/Imagens/logos-motoshock/favicon-verm.png"
+            src="/imagens/logos-motoshock/favicon-verm.png"
             alt="Motoshock"
             width={72}
             height={72}
             className="mx-auto mb-4 rounded-xl"
           />
           <Image
-            src="/Imagens/logos-motoshock/motoshock-logo-cut.PNG"
+            src="/imagens/logos-motoshock/motoshock-logo-cut.png"
             alt="Motoshock"
             width={200}
             height={67}

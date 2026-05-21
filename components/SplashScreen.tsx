@@ -50,7 +50,7 @@ export default function SplashScreen({ onComplete }: { onComplete?: () => void }
     >
       <div ref={symbolRef} className="flex items-center justify-center">
         <Image
-          src="/Imagens/logos-motoshock/raio-motoshock.PNG"
+          src="/imagens/logos-motoshock/raio-motoshock.png"
           alt="Motoshock"
           width={320}
           height={420}

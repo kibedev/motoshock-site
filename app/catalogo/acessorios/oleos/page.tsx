@@ -6,20 +6,20 @@ import { tiposAcessorio } from '@/lib/data/acessorios';
 
 const LOGOS_POR_SLUG: Record<string, { src: string; alt: string }[]> = {
   'oleo-motor': [
-    { src: '/Imagens/logos-oleo/motul-logo.png',    alt: 'Motul' },
-    { src: '/Imagens/logos-oleo/mobil-logo1.png',   alt: 'Mobil' },
-    { src: '/Imagens/logos-oleo/lubrax-logo.png',   alt: 'Lubrax' },
-    { src: '/Imagens/logos-oleo/ipiranga-logo.png', alt: 'Ipiranga' },
-    { src: '/Imagens/logos-oleo/shell-logo.png',    alt: 'Shell' },
-    { src: '/Imagens/logos-oleo/yamalube-logo.png', alt: 'Yamalube' },
+    { src: '/imagens/logos-oleo/motul-logo.png',    alt: 'Motul' },
+    { src: '/imagens/logos-oleo/mobil-logo1.png',   alt: 'Mobil' },
+    { src: '/imagens/logos-oleo/lubrax-logo.png',   alt: 'Lubrax' },
+    { src: '/imagens/logos-oleo/ipiranga-logo.png', alt: 'Ipiranga' },
+    { src: '/imagens/logos-oleo/shell-logo.png',    alt: 'Shell' },
+    { src: '/imagens/logos-oleo/yamalube-logo.png', alt: 'Yamalube' },
   ],
   'oleo-freio': [
-    { src: '/Imagens/logos-oleo/motul-logo.png',    alt: 'Motul' },
-    { src: '/Imagens/logos-oleo/bosch-logo.png',    alt: 'Bosch' },
-    { src: '/Imagens/logos-oleo/yamalube-logo.png', alt: 'Yamalube' },
+    { src: '/imagens/logos-oleo/motul-logo.png',    alt: 'Motul' },
+    { src: '/imagens/logos-oleo/bosch-logo.png',    alt: 'Bosch' },
+    { src: '/imagens/logos-oleo/yamalube-logo.png', alt: 'Yamalube' },
   ],
   'oleo-suspensao': [
-    { src: '/Imagens/logos-oleo/motul-logo.png', alt: 'Motul' },
+    { src: '/imagens/logos-oleo/motul-logo.png', alt: 'Motul' },
   ],
 };
 

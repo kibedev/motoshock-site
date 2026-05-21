@@ -79,7 +79,7 @@ export default function Home() {
       {/* Hero */}
       <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/Imagens/hero-background.jpg"
+          src="/imagens/hero-background.jpg"
           alt=""
           fill
           className="object-cover object-center"

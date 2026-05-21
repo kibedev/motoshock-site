@@ -108,7 +108,7 @@ export default function Footer() {
         {/* Col 1: Brand */}
         <div>
           <Image
-            src="/Imagens/logos-motoshock/motoshock-logo-cut.PNG"
+            src="/imagens/logos-motoshock/motoshock-logo-cut.png"
             alt="Motoshock"
             width={1280}
             height={432}

@@ -17,10 +17,10 @@ const segments = [
 const SLUGS_VISIVEIS = ['jaquetas', 'calcas', 'luvas', 'botas'];
 
 const IMAGENS: Record<string, string> = {
-  jaquetas: '/Imagens/acessorios-png/jaqueta-x11.png',
-  calcas:   '/Imagens/acessorios-png/calça-x11.png',
-  luvas:    '/Imagens/acessorios-png/luva-x11.png',
-  botas:    '/Imagens/acessorios-png/bota-pantaneiro.png',
+  jaquetas: '/imagens/acessorios-png/jaqueta-x11.png',
+  calcas:   '/imagens/acessorios-png/calça-x11.png',
+  luvas:    '/imagens/acessorios-png/luva-x11.png',
+  botas:    '/imagens/acessorios-png/bota-pantaneiro.png',
 };
 
 export default function AcessoriosPage() {

@@ -32,7 +32,7 @@ export default function SelecionarUnidade({ splashDone }: { splashDone: boolean 
       <div className="w-full max-w-xl">
         <div className="text-center mb-8">
           <Image
-            src="/Imagens/logos-motoshock/motoshock-logo.PNG"
+            src="/imagens/logos-motoshock/motoshock-logo.png"
             alt="Motoshock"
             width={160}
             height={53}

@@ -21,10 +21,10 @@ export const metadata: Metadata = {
     'Especialistas em manutenção de motos e venda de peças e acessórios. Unidades em Prazeres e Cabo de Santo Agostinho, PE.',
   icons: {
     icon: [
-      { url: '/Imagens/logos-motoshock/fav-icon-red.png', sizes: '32x32', type: 'image/png' },
-      { url: '/Imagens/logos-motoshock/fav-icon-red.png', sizes: '192x192', type: 'image/png' },
+      { url: '/imagens/logos-motoshock/fav-icon-red.png', sizes: '32x32', type: 'image/png' },
+      { url: '/imagens/logos-motoshock/fav-icon-red.png', sizes: '192x192', type: 'image/png' },
     ],
-    apple: { url: '/Imagens/logos-motoshock/fav-icon-red.png', sizes: '180x180', type: 'image/png' },
+    apple: { url: '/imagens/logos-motoshock/fav-icon-red.png', sizes: '180x180', type: 'image/png' },
   },
 };
 
