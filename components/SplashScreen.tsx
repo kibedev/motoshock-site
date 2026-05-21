@@ -55,7 +55,6 @@ export default function SplashScreen({ onComplete }: { onComplete?: () => void }
           width={320}
           height={420}
           className="w-64 sm:w-80 md:w-96 lg:w-[28rem] h-auto"
-          priority
         />
       </div>
     </div>
