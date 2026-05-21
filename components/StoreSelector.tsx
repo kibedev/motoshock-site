@@ -35,7 +35,7 @@ export default function StoreSelector() {
             className="mx-auto mb-4 rounded-xl"
           />
           <Image
-            src="/Imagens/motoshock-logo-cut.PNG"
+            src="/Imagens/logos-motoshock/motoshock-logo-cut.PNG"
             alt="Motoshock"
             width={200}
             height={67}

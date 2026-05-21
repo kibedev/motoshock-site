@@ -159,7 +159,7 @@ export default function Navbar() {
             }}
             className="shrink-0"
           >
-            <Image src="/Imagens/motoshock-logo.PNG" alt="Motoshock" width={165} height={55} className="w-[150px] h-auto" priority />
+            <Image src="/Imagens/logos-motoshock/motoshock-logo.PNG" alt="Motoshock" width={165} height={55} className="w-[150px] h-auto" priority />
           </Link>
 
           {/* Desktop nav */}
