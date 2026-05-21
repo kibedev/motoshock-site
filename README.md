@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# Motoshock
 
-First, run the development server:
+**Sua preferência, nosso maior valor.**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Site institucional e catálogo de acessórios para motos — com atendimento direto via WhatsApp.
+
+[![Next.js](https://img.shields.io/badge/Next.js-16-000000?style=flat&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+
+</div>
+
+---
+
+## Sobre o projeto
+
+Site da **Motoshock**, empresa especializada em peças, acessórios e manutenção de motos em Pernambuco, com unidades em Prazeres (Jaboatão dos Guararapes) e Cabo de Santo Agostinho.
+
+O site reúne:
+
+- **Landing page** institucional com hero animado (GSAP), seção sobre a empresa, serviços, diferenciais e localização
+- **Catálogo de acessórios** — Capacetes, Capas de Chuva, Jaquetas, Calças, Luvas, Botas e Óleos (motor, freio e suspensão)
+- **Seleção de unidade** — o usuário escolhe a loja preferida e todos os links de WhatsApp respeitam essa seleção
+- **CTA direto pro WhatsApp** em todos os produtos, sem exibir preços
+
+---
+
+## Tecnologias
+
+| Categoria | Stack |
+|-----------|-------|
+| **Framework** | Next.js 16 (App Router) |
+| **UI** | React 19 + TypeScript 5 |
+| **Estilização** | Tailwind CSS v4 + CSS inline |
+| **Animações** | GSAP (hero) |
+| **Estado** | React Context API + localStorage |
+| **Dados** | Arquivos TypeScript em `lib/data/` |
+| **Versionamento** | Git + GitHub |
+
+---
+
+## Estrutura de pastas
+
+```
+motoshock-site/
+├── app/
+│   ├── page.tsx                          # Homepage
+│   ├── layout.tsx                        # Layout raiz
+│   └── catalogo/
+│       └── acessorios/
+│           ├── page.tsx                  # Grid de categorias
+│           ├── capacetes/
+│           ├── capas-de-chuva/
+│           ├── oleos/
+│           │   ├── oleo-motor/
+│           │   ├── oleo-freio/
+│           │   └── oleo-suspensao/
+│           └── [tipo]/                   # Jaquetas, Calças, Luvas, Botas
+├── components/
+│   ├── Navbar.tsx
+│   ├── Footer.tsx
+│   ├── ConsultorCard.tsx
+│   ├── HeroGsap.tsx
+│   └── SelecionarUnidade.tsx
+├── lib/
+│   ├── context/unidade.tsx               # Contexto de seleção de unidade
+│   ├── data/
+│   │   ├── empresa.ts                    # Endereços e WhatsApp
+│   │   ├── acessorios.ts                 # Catálogo de acessórios
+│   │   └── marcas.ts                     # Marcas de moto
+│   └── utils.ts                          # Gerador de link WhatsApp
+├── public/Imagens/                       # Imagens dos produtos
+├── next.config.ts
+└── tsconfig.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Começando
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Pré-requisitos
 
-## Learn More
+- Node.js **18.17+**
+- npm, yarn ou pnpm
 
-To learn more about Next.js, take a look at the following resources:
+### Instalação
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+git clone https://github.com/kibedev/motoshock-site.git
+cd motoshock-site
+npm install
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Acesse [http://localhost:3000](http://localhost:3000).
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Comando | Descrição |
+|---------|-----------|
+| `npm run dev` | Servidor de desenvolvimento |
+| `npm run build` | Build de produção |
+| `npm run start` | Executa a build localmente |
+| `npx tsc --noEmit` | Verificação de tipos |
+
+---
+
+## Deploy
+
+Recomendado via [Vercel](https://vercel.com/):
+
+1. Importe o repositório em [vercel.com/new](https://vercel.com/new)
+2. Deploy automático a cada `push` na branch `main`
+
+---
+
+<div align="center">
+
+Desenvolvido por [kibedev](https://github.com/kibedev)
+
+</div>
