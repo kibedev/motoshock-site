@@ -12,7 +12,7 @@ export function gerarLinkWhatsApp(
 ): string {
   const { marca, modelo, categoria, subcategoria, produto } = opts;
 
-  let mensagem = 'Olá! ';
+  let mensagem = 'Vim pelo site Motoshock! ';
 
   if (produto) {
     mensagem += `Tenho interesse em *${produto}*`;
@@ -30,7 +30,7 @@ export function gerarLinkWhatsApp(
     mensagem += ` da marca *${marca}*`;
   }
 
-  mensagem += '. Poderia me informar disponibilidade e valores? Obrigado!\n\n_Mensagem enviada pelo site Motoshock_ 🏍️';
+  mensagem += '. Poderia me informar disponibilidade e valores? Obrigado!';
 
   const numeroLimpo = numero.replace(/\D/g, '');
   return `https://wa.me/${numeroLimpo}?text=${encodeURIComponent(mensagem)}`;
