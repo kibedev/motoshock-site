@@ -118,12 +118,14 @@ export default function Home() {
                 </span>
               </h2>
               <p style={{ fontSize: 16, lineHeight: 1.7, color: 'rgba(255,255,255,0.7)', marginTop: 28 }}>
-                Fundada no ano de <strong style={{ color: '#fff' }}>1999</strong>, com a inauguração da primeira loja em{' '}
-                <strong style={{ color: '#fff' }}>Jaboatão dos Guararapes – PE</strong>, a MotoShock é uma empresa especializada em peças, produtos e serviços para motos e motociclistas. Ao longo desses anos, expandimos nossa presença na região com a abertura de novas lojas no Recife e no Cabo de Santo Agostinho, graças aos laços criados com nossos clientes, parceiros e fornecedores.
+                Fundada em <strong style={{ color: '#fff' }}>1999</strong>, com a inauguração da primeira loja em{' '}
+                <strong style={{ color: '#fff' }}>Jaboatão dos Guararapes – PE</strong>, a MotoShock é uma empresa especializada em peças, produtos e serviços para motos e motociclistas. Ao longo de mais de 25 anos de história, expandimos nossa presença na região com a abertura de novas lojas no Cabo de Santo Agostinho, graças aos laços criados com nossos clientes, parceiros e fornecedores.
               </p>
               <p style={{ fontSize: 16, lineHeight: 1.7, color: 'rgba(255,255,255,0.7)', marginTop: 16 }}>
-                Hoje, com lojas na Região Metropolitana, a MotoShock traz ramificações que garantem um atendimento ainda mais qualificado, com o surgimento das marcas{' '}
-                <strong style={{ color: '#fff' }}>MotoShock Racing</strong> e <strong style={{ color: '#fff' }}>Moto 46</strong> — voltadas para segmentos específicos de peças, boutique e oficina, dentro do conceito de excelência no atendimento e máxima qualidade.
+                Com uma equipe de profissionais capacitados e apaixonados pelo universo das motos, a MotoShock oferece produtos originais e de qualidade comprovada, garantindo segurança e satisfação em cada compra. Nosso atendimento personalizado e o relacionamento próximo com os clientes são a base de uma reputação construída com seriedade ao longo de décadas.
+              </p>
+              <p style={{ fontSize: 16, lineHeight: 1.7, color: 'rgba(255,255,255,0.7)', marginTop: 16 }}>
+                Hoje, com lojas estrategicamente localizadas na Região Metropolitana, a MotoShock consolida sua trajetória com um atendimento cada vez mais qualificado, reafirmando seu compromisso com a excelência e a máxima qualidade em tudo que oferece.
               </p>
               <StatsCounter />
             </div>
