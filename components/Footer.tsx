@@ -47,7 +47,7 @@ function NavCol({ title, items }: { title: string; items: { label: string; href:
 export default function Footer() {
   const { slug } = useUnidade();
   const numero = slug === 'cabo' ? empresa.enderecos[1].whatsapp : empresa.enderecos[0].whatsapp;
-  const whatsappLink = gerarLinkWhatsApp(numero);
+  const whatsappLink = `https://wa.me/${numero}?text=${encodeURIComponent('Olá, vim pelo site Motoshock e gostaria de agendar a manutenção da minha moto.')}`;
   const year = new Date().getFullYear();
 
   return (
