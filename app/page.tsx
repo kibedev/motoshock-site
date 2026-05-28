@@ -4,6 +4,7 @@ import { empresa } from '@/lib/data/empresa';
 import { gerarLinkWhatsApp } from '@/lib/utils';
 import FadeIn from '@/components/FadeIn';
 import HeroGsap from '@/components/HeroGsap';
+import StatsCounter from '@/components/StatsCounter';
 
 const BRAND = '#E10F1E';
 
@@ -123,15 +124,7 @@ export default function Home() {
                 Hoje, com lojas na Região Metropolitana, a MotoShock traz ramificações que garantem um atendimento ainda mais qualificado, com o surgimento das marcas{' '}
                 <strong style={{ color: '#fff' }}>MotoShock Racing</strong> e <strong style={{ color: '#fff' }}>Moto 46</strong> — voltadas para segmentos específicos de peças, boutique e oficina, dentro do conceito de excelência no atendimento e máxima qualidade.
               </p>
-              {/* Stats */}
-              <div style={{ display: 'flex', gap: 0, marginTop: 40 }}>
-                {([['25+','Anos'],['15+','Marcas'],['5K+','Clientes']] as const).map(([n, l], i) => (
-                  <div key={l} style={{ paddingLeft: i === 0 ? 0 : 32 }}>
-                    <div style={{ fontSize: 34, fontWeight: 700, letterSpacing: '-0.03em', lineHeight: 1, color: '#fff' }}>{n}</div>
-                    <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.5)', letterSpacing: '0.15em', textTransform: 'uppercase', marginTop: 8 }}>{l}</div>
-                  </div>
-                ))}
-              </div>
+              <StatsCounter />
             </div>
           </FadeIn>
         </div>
