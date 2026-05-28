@@ -47,7 +47,6 @@ export const tiposAcessorio: TipoAcessorio[] = [
       { slug: 'alba',       nome: 'Alba',       logo: '/imagens/capas-png/alba-capa.png',       descricao: 'Capa & Cobertura',  brandColor: '#EE5A1A', produtos: [] },
       { slug: 'delta',      nome: 'Delta',      logo: '/imagens/capas-png/delta-capa.png',      descricao: 'Rain Gear',         brandColor: '#D92D2D', produtos: [] },
       { slug: 'pantaneiro', nome: 'Pantaneiro', logo: '/imagens/capas-png/pantaneiro-capa.png', descricao: 'Resistente',        brandColor: '#2BAE4C', produtos: [] },
-      { slug: 'pioneiro',   nome: 'Pioneiro',   logo: '/imagens/capas-png/pioneira-capa.png',   descricao: 'Proteção · Vencer', brandColor: '#D94518', produtos: [] },
     ],
   },
   {
