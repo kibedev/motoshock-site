@@ -5,6 +5,7 @@ import { gerarLinkWhatsApp } from '@/lib/utils';
 import FadeIn from '@/components/FadeIn';
 import HeroGsap from '@/components/HeroGsap';
 import StatsCounter from '@/components/StatsCounter';
+import AnimatedStat from '@/components/AnimatedStat';
 
 const BRAND = '#E10F1E';
 
@@ -217,10 +218,10 @@ export default function Home() {
           </FadeIn>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {([
-              { icon: 'shield', kicker: '01', title: 'Experiência de Mercado',     desc: 'Mais de 25 anos atendendo motociclistas em Pernambuco com qualidade, confiança e dedicação.', stat: '25+', statLabel: 'Anos' },
-              { icon: 'grid',   kicker: '02', title: 'Amplo Catálogo',            desc: 'Honda, Yamaha, Royal Enfield, Bajaj, BMW e muito mais.',                 stat: '15+',  statLabel: 'Marcas'    },
-              { icon: 'chat',   kicker: '03', title: 'Atendimento Especializado', desc: 'Consultores prontos para ajudar você a encontrar a peça certa.',         stat: '< 5min',statLabel: 'Resposta' },
-              { icon: 'engine', kicker: '04', title: 'Mecânicos Especializados',   desc: 'Equipe treinada para diagnosticar e reparar qualquer tipo de moto com precisão e cuidado.', stat: '100%', statLabel: 'Confiável' },
+              { icon: 'shield', kicker: '01', title: 'Experiência de Mercado',     desc: 'Mais de 25 anos atendendo motociclistas em Pernambuco com qualidade, confiança e dedicação.', statValue: 25,  statPrefix: '',   statSuffix: '+',   statLabel: 'Anos'      },
+              { icon: 'grid',   kicker: '02', title: 'Amplo Catálogo',            desc: 'Honda, Yamaha, Royal Enfield, Bajaj, BMW e muito mais.',                                         statValue: 15,  statPrefix: '',   statSuffix: '+',   statLabel: 'Marcas'    },
+              { icon: 'chat',   kicker: '03', title: 'Atendimento Especializado', desc: 'Consultores prontos para ajudar você a encontrar a peça certa.',                                  statValue: 5,   statPrefix: '< ', statSuffix: 'min', statLabel: 'Resposta'  },
+              { icon: 'engine', kicker: '04', title: 'Mecânicos Especializados',   desc: 'Equipe treinada para diagnosticar e reparar qualquer tipo de moto com precisão e cuidado.',      statValue: 100, statPrefix: '',   statSuffix: '%',   statLabel: 'Confiável' },
             ] as const).map((it, i) => (
               <FadeIn key={it.kicker} delay={i * 80}>
                 <div className="ms-card" style={{ '--brand': BRAND, padding: 26, minHeight: 280, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', cursor: 'default', height: '100%' } as React.CSSProperties}>
@@ -235,7 +236,7 @@ export default function Home() {
                     <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)', lineHeight: 1.5, marginTop: 10 }}>{it.desc}</p>
                   </div>
                   <div style={{ position: 'relative', display: 'flex', alignItems: 'baseline', gap: 8, paddingTop: 14, borderTop: '1px solid rgba(255,255,255,0.08)' }}>
-                    <span style={{ fontSize: 28, fontWeight: 700, color: BRAND, lineHeight: 1, letterSpacing: '-0.02em' }}>{it.stat}</span>
+                    <AnimatedStat value={it.statValue} prefix={it.statPrefix} suffix={it.statSuffix} style={{ fontSize: 28, fontWeight: 700, color: BRAND, lineHeight: 1, letterSpacing: '-0.02em' }} />
                     <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.5)', letterSpacing: '0.15em', textTransform: 'uppercase' }}>{it.statLabel}</span>
                   </div>
                 </div>
