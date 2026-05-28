@@ -30,7 +30,7 @@ export function gerarLinkWhatsApp(
     mensagem += ` da marca *${marca}*`;
   }
 
-  mensagem += '. Poderia me informar disponibilidade e valores? Obrigado!';
+  mensagem += '. Poderia me informar disponibilidade e valores? Obrigado!\n\n_Mensagem enviada pelo site Motoshock_ 🏍️';
 
   const numeroLimpo = numero.replace(/\D/g, '');
   return `https://wa.me/${numeroLimpo}?text=${encodeURIComponent(mensagem)}`;

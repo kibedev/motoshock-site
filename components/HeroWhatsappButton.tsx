@@ -3,7 +3,7 @@
 import { useUnidade } from '@/lib/context/unidade';
 import { empresa } from '@/lib/data/empresa';
 
-const MSG = encodeURIComponent('Olá! Gostaria de mais informações.');
+const MSG = encodeURIComponent('Olá! Gostaria de mais informações.\n\n_Mensagem enviada pelo site Motoshock_ 🏍️');
 
 export default function HeroWhatsappButton() {
   const { slug, endereco } = useUnidade();

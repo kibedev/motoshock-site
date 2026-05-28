@@ -312,7 +312,7 @@ export default function Home() {
 
                     {/* WhatsApp da unidade */}
                     <a
-                      href={`https://wa.me/${end.whatsapp}?text=${encodeURIComponent('Olá! Gostaria de mais informações.')}`}
+                      href={gerarLinkWhatsApp(end.whatsapp)}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 w-full border border-zinc-700 hover:border-red-600 hover:bg-zinc-800 rounded-xl px-4 py-3 transition-colors group"
